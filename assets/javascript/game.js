@@ -75,6 +75,8 @@
     counter += crystalValue;
 
     // All of the same game win-lose logic applies. So the rest remains unchanged.
+
+    /// need to change alerts into DOM elements
     alert("New score: " + counter);
 
     if (counter === targetNumber) {
