@@ -4,7 +4,7 @@
 $(document).ready(function () {
 
     //create the random number that is to be reached by the guesses
-    var targetNumber = Math.floor(Math.random() * 101 + 19);
+    var targetNumber = Math.floor(Math.random() * 102 + 19);
     console.log(targetNumber);
 
     //create random numbers for each of the crystal images
@@ -46,9 +46,9 @@ $(document).ready(function () {
     function overload() {
         if (result > targetNumber)
             result = 0;
-        $("#randomNum").text(result);
+        $("#score").text(result);
 
-        targetNumber = Math.floor(Math.random() * 101 + 19);
+        targetNumber = Math.floor(Math.random() * 102 + 19);
         console.log(targetNumber);
         crystal1 = Math.floor(Math.random() * 12 + 1);
         console.log(crystal1);
@@ -77,7 +77,7 @@ $(document).ready(function () {
     })
 
     $(".crystal2").on("click", function () {
-        result = result + crystal1;
+        result = result + crystal2;
         console.log(result);
         $("#score").text(result);
 
@@ -89,7 +89,7 @@ $(document).ready(function () {
         }
     })
     $(".crystal3").on("click", function () {
-        result = result + crystal1;
+        result = result + crystal3;
         console.log(result);
         $("#score").text(result);
 
@@ -101,7 +101,7 @@ $(document).ready(function () {
         }
     })
     $(".crystal4").on("click", function () {
-        result = result + crystal1;
+        result = result + crystal4;
         console.log(result);
         $("#score").text(result);
 
