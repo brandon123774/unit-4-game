@@ -1,6 +1,28 @@
-h1   {
-background: orange;
+body{
+    background-color: aquamarine;
 }
-p   {
-color: green;
+
+#banner {
+    background-color: orange;
+    text-align: center;
+}
+
+#rules  {
+    text-align: center;
+}
+
+#randomNum  {
+    text-align: center;
+}
+
+#gameStats  {
+    text-align: center;
+}
+
+.crystal1, .crystal2, .crystal3, .crystal4   {
+    display: block;
+    
+}
+#score  {
+    text-align: center;
 }

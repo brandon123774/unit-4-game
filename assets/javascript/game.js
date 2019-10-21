@@ -49,15 +49,15 @@ $(document).ready(function () {
         $("#score").text(result);
 
         targetNumber = Math.floor(Math.random() * 102 + 19);
-        console.log(targetNumber);
+        //console.log(targetNumber);
         crystal1 = Math.floor(Math.random() * 12 + 1);
-        console.log(crystal1);
+        //console.log(crystal1);
         crystal2 = Math.floor(Math.random() * 12 + 1);
-        console.log(crystal2);
+        //console.log(crystal2);
         crystal3 = Math.floor(Math.random() * 12 + 1);
-        console.log(crystal3);
+        //console.log(crystal3);
         crystal4 = Math.floor(Math.random() * 12 + 1);
-        console.log(crystal4);
+        //console.log(crystal4);
 
         $("#randomNum").text("Number to Guess: " + targetNumber);
 
@@ -78,7 +78,7 @@ $(document).ready(function () {
 
     $(".crystal2").on("click", function () {
         result = result + crystal2;
-        console.log(result);
+        //console.log(result);
         $("#score").text(result);
 
         if (result === targetNumber) {
@@ -90,7 +90,7 @@ $(document).ready(function () {
     })
     $(".crystal3").on("click", function () {
         result = result + crystal3;
-        console.log(result);
+        //console.log(result);
         $("#score").text(result);
 
         if (result === targetNumber) {
@@ -102,7 +102,7 @@ $(document).ready(function () {
     })
     $(".crystal4").on("click", function () {
         result = result + crystal4;
-        console.log(result);
+        //console.log(result);
         $("#score").text(result);
 
         if (result === targetNumber) {
