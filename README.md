@@ -12,13 +12,42 @@ In this program, there are four crystals and each of them have different values.
 
 ## Bits of code
 
-* This was used to print out the values of wins, losses, and total score onto the DOM or onto the wbpage itself
-var winsText = document.getElementById("wins-text");
-var lossesText = document.getElementById("losses-text");
-var totalScoreText = document.getElementById("total-score-text");
+* This was used to tell the program that the user went passed the number that they were supposed to get and that the game will reset
 
-* This is code in jquery that is used to demonstrate that the image of the id crystal is to be clicked for this function to take place
- $(".crystal-image").on("click", function() {
+ function overload() {
+        if (result > targetNumber)
+            result = 0;
+        $("#score").text(result);
+
+        targetNumber = Math.floor(Math.random() * 102 + 19);
+        //console.log(targetNumber);
+        crystal1 = Math.floor(Math.random() * 12 + 1);
+        //console.log(crystal1);
+        crystal2 = Math.floor(Math.random() * 12 + 1);
+        //console.log(crystal2);
+        crystal3 = Math.floor(Math.random() * 12 + 1);
+        //console.log(crystal3);
+        crystal4 = Math.floor(Math.random() * 12 + 1);
+        //console.log(crystal4);
+
+        $("#randomNum").text("Number to Guess: " + targetNumber);
+
+    }
+
+* This is code in jquery that is used to demonstrate that the image of the first crystal is to be clicked for this function to take place
+
+  $(".crystal1").on("click", function () {
+        result = result + crystal1;
+        console.log(result);
+        $("#score").text(result);
+
+        if (result === targetNumber) {
+            won();
+        } else if (result > targetNumber) {
+            lost();
+            overload();
+        }
+    })
 	
 ## Technologies
 Project is created using the following:

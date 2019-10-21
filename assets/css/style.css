@@ -1,9 +1,12 @@
 body{
-    background-color: aquamarine;
+    background-color:navy;
+    text-align: center;
+    color: silver;
+    
 }
 
 #banner {
-    background-color: orange;
+    background-color: red;
     text-align: center;
 }
 
